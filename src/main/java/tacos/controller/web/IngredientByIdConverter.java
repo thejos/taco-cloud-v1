@@ -30,7 +30,6 @@ import tacos.model.bean.Ingredient;
 @Component
 public class IngredientByIdConverter implements Converter<String, Ingredient> {
 
-//	private Map<String, Ingredient> ingredientMap = new HashMap<>();
 	@Autowired
 	private IngredientRepository ingredientRepository;
 
