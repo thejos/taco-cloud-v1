@@ -3,8 +3,8 @@
 # A collection of useful .gitignore templates in the github/gitignore repository: https://github.com/github/gitignore
 # Create useful .gitignore files for your project at gitignore.io: https://www.toptal.com/developers/gitignore
 
-# Pattern START
 
+# Pattern START
 
 
 ### Java ###
@@ -37,6 +37,20 @@ hs_err_pid*
 ### Java-Web ###
 ## ignoring target file
 target/
+
+
+
+### Maven ###
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+# https://github.com/takari/maven-wrapper#usage-without-binary-jar
+.mvn/wrapper/maven-wrapper.jar
 
 
 
@@ -115,20 +129,6 @@ HELP.md
 
 
 
-### Maven ###
-pom.xml.tag
-pom.xml.releaseBackup
-pom.xml.versionsBackup
-pom.xml.next
-release.properties
-dependency-reduced-pom.xml
-buildNumber.properties
-.mvn/timing.properties
-# https://github.com/takari/maven-wrapper#usage-without-binary-jar
-.mvn/wrapper/maven-wrapper.jar
-
-
-
 ### NetBeans ###
 **/nbproject/private/
 **/nbproject/Makefile-*.mk
@@ -139,6 +139,13 @@ dist/
 nbdist/
 .nb-gradle/
 
+
+
+## IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
 
 
 # Pattern END
